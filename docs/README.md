@@ -1,5 +1,7 @@
 Hello Professor,
 
+ReadME and Heuristic Report are located in docs/
+
 if zip: 
 cd to /AI
 npm install
