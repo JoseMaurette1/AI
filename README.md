@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Hello Professor,
 
-## Getting Started
-
-First, run the development server:
-
-```bash
+if zip: 
+cd to /AI
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
+For this project I implemented React, Typescript, Next.JS and Tailwind CSS to create the front end and render all the necessary UI.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## UI Library, Icons and Premade Components
+For the UI Library I utilized [ShadcnUI](https://ui.shadcn.com/).
+For the File Upload Logic I utilized a reusable components taken from [21st.dev](https://21st.dev/flower0wine/file-upload/default).
+For the Icons I used [LucideReact](https://lucide.dev/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Overview
+Upload or Select a sample image, when you upload the image it comes shuffled but you can click on the shuffle button to shuffle it again. Reset button turns it back to the original state of the image meaning it gets solved.
 
-## Learn More
+I implemented three algorithms, A* Search with Manhattan Distance, BFS, and DFS for comparison.
 
-To learn more about Next.js, take a look at the following resources:
+*Solve Puzzle* OnClick()=> toggles the algorithm shows the stats for the answer including length, nodes expanded, time, and the max depth i allocated to each algorithm.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can use solution playback in order to pause, go back and view different steps that the algorithm takes.
