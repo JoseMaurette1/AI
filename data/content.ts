@@ -40,9 +40,10 @@ export const heroContent: HeroContent = {
       image: "/puzzle.png"
     },
     {
+      link: "/game",
       id: "game",
       title: "Traditional Approach: Game",
-      date: "TBD...",
+      date: "2025-10-19",
       image: "/game.png"
     },
     {

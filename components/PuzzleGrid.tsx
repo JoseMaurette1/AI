@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { cn } from '@/lib/utils';
 import { BoardState, Move } from '@/lib/puzzle-types';
-import { formatTileValue, isValidMove, applyMove } from '@/lib/puzzle-utils';
+import { formatTileValue, isValidMove } from '@/lib/puzzle-utils';
 // Revert to native img for tile rendering
 
 interface PuzzleGridProps {

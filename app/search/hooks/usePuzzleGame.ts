@@ -11,12 +11,11 @@ export const usePuzzleGame = () => {
 
   // Initialize with shuffled board on client-side only (after hydration)
   useEffect(() => {
-    // Only shuffle on initial mount to avoid hydration mismatch
-    if (currentBoard === GOAL_BOARD && typeof window !== 'undefined') {
-      const shuffledBoard = generateRandomSolvableBoard();
-      setCurrentBoard(shuffledBoard);
-    }
-  }, []); // Empty dependency array - only run once on mount
+    if (typeof window === 'undefined') return;
+    if (currentBoard !== GOAL_BOARD) return;
+    const shuffledBoard = generateRandomSolvableBoard();
+    setCurrentBoard(shuffledBoard);
+  }, [currentBoard]);
 
   // Check if puzzle is solved
   useEffect(() => {

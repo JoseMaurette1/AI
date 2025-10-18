@@ -43,7 +43,7 @@ const reconstructPath = (
 // A* Search Algorithm
 export const aStarSearch = (
   startBoard: BoardState,
-  goalBoard: BoardState,
+  _goalBoard: BoardState,
   heuristic: Heuristic
 ): SearchResult => {
   const startTime = Date.now();
@@ -148,7 +148,7 @@ export const aStarSearch = (
 };
 
 // BFS Search Algorithm
-export const bfsSearch = (startBoard: BoardState, goalBoard: BoardState): SearchResult => {
+export const bfsSearch = (startBoard: BoardState, _goalBoard: BoardState): SearchResult => {
   const startTime = Date.now();
 
   if (!isSolvable(startBoard)) {

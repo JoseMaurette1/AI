@@ -20,7 +20,7 @@ export const hManhattan: Heuristic = (board: BoardState): number => {
   return sum;
 };
 
-export const getHeuristic = (name: string): Heuristic => {
+export const getHeuristic = (_name: string): Heuristic => {
   return hManhattan;
 };
 
