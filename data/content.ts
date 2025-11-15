@@ -47,9 +47,10 @@ export const heroContent: HeroContent = {
       image: "/game.png"
     },
     {
+      link: "/mining",
       id: "data-mining",
       title: "Traditional Approach: Data Mining",
-      date: "TBD...",
+      date: "2025-11-16",
       image: "/mining.jpg"
     },
     {
