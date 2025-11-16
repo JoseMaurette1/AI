@@ -24,6 +24,12 @@ This implementation is part of an Artificial Intelligence course (CAI4002) focus
 
 ### Installation Steps
 
+Option 1:
+
+run ./start.sh
+
+Option 2:
+
 1. **Clone or navigate to the project directory:**
    ```bash
    cd /home/jose/HW/A1/AI
@@ -43,16 +49,6 @@ This implementation is part of an Artificial Intelligence course (CAI4002) focus
    - Open your browser and navigate to `http://localhost:3000`
    - Click on the "Traditional Approach: Data Mining" card
    - Or directly navigate to `http://localhost:3000/mining`
-
-
-### Build for Production
-
-```bash
-npm run build
-npm start
-```
-
-## How to Use the Application
 
 ### Step 1: Input Transaction Data
 
