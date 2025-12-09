@@ -8,7 +8,7 @@ const execAsync = promisify(exec);
 
 export async function GET() {
   try {
-    const csvPath = path.join(process.cwd(), 'product_sales.csv');
+    const csvPath = path.join(process.cwd(), 'public', 'product_sales.csv');
     const mlAnalysisPath = path.join(process.cwd(), 'ml_analysis');
     const mainScriptPath = path.join(mlAnalysisPath, 'main_analysis.py');
     const resultsPath = path.join(process.cwd(), 'ml_results');
