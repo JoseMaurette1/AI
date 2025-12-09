@@ -1,0 +1,105 @@
+{
+  "elbow_method": {
+    "2": 10.803838293689648,
+    "3": 4.898355189054362,
+    "4": 2.939882536438802,
+    "5": 1.7912539652730566,
+    "6": 1.4184281549104971,
+    "7": 1.1180021147019759,
+    "8": 0.9533342997022981
+  },
+  "optimal_k": 4,
+  "kmeans_info": {
+    "iterations": 10,
+    "converged": true,
+    "wcss": 2.939882536438802,
+    "final_centroids": [
+      [
+        0.2905222239271652,
+        0.40413912043690725
+      ],
+      [
+        0.5139981737288961,
+        0.20045856534556175
+      ],
+      [
+        0.9484388053467,
+        0.0659330985915493
+      ],
+      [
+        0.131934775209629,
+        0.8523735002608243
+      ]
+    ]
+  },
+  "cluster_statistics": {
+    "cluster_0": {
+      "count": 98,
+      "avg_price": 4.936938775510206,
+      "avg_cost": 2.8734693877551023,
+      "avg_units_sold": 301.9387755102041,
+      "avg_profit": 615.5704081632654,
+      "avg_promotion_frequency": 0.9591836734693877,
+      "avg_shelf_level": 2.4591836734693877,
+      "categories": {
+        "Bakery": 29,
+        "Snacks": 23,
+        "Beverages": 22,
+        "Produce": 11,
+        "Dairy": 7,
+        "Meat": 6
+      }
+    },
+    "cluster_1": {
+      "count": 43,
+      "avg_price": 8.280697674418606,
+      "avg_cost": 5.3534883720930235,
+      "avg_units_sold": 157.32558139534885,
+      "avg_profit": 458.1941860465115,
+      "avg_promotion_frequency": 0.18604651162790697,
+      "avg_shelf_level": 2.5348837209302326,
+      "categories": {
+        "Dairy": 20,
+        "Produce": 13,
+        "Beverages": 4,
+        "Meat": 2,
+        "Bakery": 2,
+        "Snacks": 2
+      }
+    },
+    "cluster_2": {
+      "count": 32,
+      "avg_price": 22.255625000000002,
+      "avg_cost": 15.009375,
+      "avg_units_sold": 61.8125,
+      "avg_profit": 369.80062499999997,
+      "avg_promotion_frequency": 0.0625,
+      "avg_shelf_level": 3.21875,
+      "categories": {
+        "Meat": 25,
+        "Dairy": 7
+      }
+    },
+    "cluster_3": {
+      "count": 27,
+      "avg_price": 2.564074074074074,
+      "avg_cost": 1.388888888888889,
+      "avg_units_sold": 702.5925925925926,
+      "avg_profit": 748.6037037037037,
+      "avg_promotion_frequency": 1.5925925925925926,
+      "avg_shelf_level": 1.7037037037037037,
+      "categories": {
+        "Produce": 9,
+        "Snacks": 8,
+        "Beverages": 7,
+        "Bakery": 3
+      }
+    }
+  },
+  "cluster_names": {
+    "cluster_0": "Mid-Range Steady",
+    "cluster_1": "Premium Low-Volume",
+    "cluster_2": "Premium Low-Volume",
+    "cluster_3": "Budget Best-Sellers"
+  }
+}

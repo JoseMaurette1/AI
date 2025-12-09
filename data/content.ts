@@ -54,9 +54,10 @@ export const heroContent: HeroContent = {
       image: "/mining.jpg"
     },
     {
+      link: "/ml",
       id: "machine-learning",
       title: "Traditional Approach: Machine Learning",
-      date: "TBD...",
+      date: "2025-12-10",
       image: "/machinelearning.png"
     }
   ]

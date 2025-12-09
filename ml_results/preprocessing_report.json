@@ -1,0 +1,190 @@
+{
+  "original_records": 200,
+  "final_records": 200,
+  "missing_values": {
+    "analysis": {
+      "total_records": 200,
+      "missing_by_column": {
+        "product_name": {
+          "count": 4,
+          "percentage": 2.0
+        }
+      },
+      "total_missing": 4,
+      "records_with_missing": 4
+    },
+    "strategies": {
+      "product_name": "Filled with \"Unknown\""
+    }
+  },
+  "outliers": {
+    "analysis": {
+      "price": {
+        "iqr": {
+          "count": 21,
+          "percentage": 10.5,
+          "lower_bound": -2.9475,
+          "upper_bound": 15.5525
+        },
+        "zscore": {
+          "count": 6,
+          "percentage": 3.0
+        }
+      },
+      "cost": {
+        "iqr": {
+          "count": 21,
+          "percentage": 10.5,
+          "lower_bound": -2.287500000000001,
+          "upper_bound": 10.212500000000002
+        },
+        "zscore": {
+          "count": 6,
+          "percentage": 3.0
+        }
+      },
+      "units_sold": {
+        "iqr": {
+          "count": 7,
+          "percentage": 3.5000000000000004,
+          "lower_bound": -195.0,
+          "upper_bound": 725.0
+        },
+        "zscore": {
+          "count": 3,
+          "percentage": 1.5
+        }
+      },
+      "promotion_frequency": {
+        "iqr": {
+          "count": 7,
+          "percentage": 3.5000000000000004,
+          "lower_bound": -1.5,
+          "upper_bound": 2.5
+        },
+        "zscore": {
+          "count": 1,
+          "percentage": 0.5
+        }
+      },
+      "shelf_level": {
+        "iqr": {
+          "count": 0,
+          "percentage": 0.0,
+          "lower_bound": 0.5,
+          "upper_bound": 4.5
+        },
+        "zscore": {
+          "count": 0,
+          "percentage": 0.0
+        }
+      },
+      "profit": {
+        "iqr": {
+          "count": 5,
+          "percentage": 2.5,
+          "lower_bound": 70.5625,
+          "upper_bound": 1028.0625
+        },
+        "zscore": {
+          "count": 2,
+          "percentage": 1.0
+        }
+      }
+    },
+    "treatment": {
+      "price": {
+        "outliers_before": 21,
+        "outliers_after": 0,
+        "lower_bound": -2.9475,
+        "upper_bound": 15.5525,
+        "method": "capped"
+      },
+      "cost": {
+        "outliers_before": 21,
+        "outliers_after": 0,
+        "lower_bound": -2.287500000000001,
+        "upper_bound": 10.212500000000002,
+        "method": "capped"
+      },
+      "units_sold": {
+        "outliers_before": 7,
+        "outliers_after": 0,
+        "lower_bound": -195.0,
+        "upper_bound": 725.0,
+        "method": "capped"
+      },
+      "promotion_frequency": {
+        "outliers_before": 7,
+        "outliers_after": 0,
+        "lower_bound": -1.5,
+        "upper_bound": 2.5,
+        "method": "capped"
+      },
+      "profit": {
+        "outliers_before": 5,
+        "outliers_after": 0,
+        "lower_bound": 70.5625,
+        "upper_bound": 1028.0625,
+        "method": "capped"
+      }
+    }
+  },
+  "normalization": {
+    "method": "minmax",
+    "features_normalized": [
+      "price",
+      "cost",
+      "units_sold",
+      "promotion_frequency",
+      "shelf_level"
+    ],
+    "scaling_parameters": {
+      "price": {
+        "min": 0.59,
+        "max": 15.5525,
+        "method": "minmax"
+      },
+      "cost": {
+        "min": 0.35,
+        "max": 10.212500000000002,
+        "method": "minmax"
+      },
+      "units_sold": {
+        "min": 15.0,
+        "max": 725.0,
+        "method": "minmax"
+      },
+      "promotion_frequency": {
+        "min": 0.0,
+        "max": 2.5,
+        "method": "minmax"
+      },
+      "shelf_level": {
+        "min": 1.0,
+        "max": 4.0,
+        "method": "minmax"
+      }
+    }
+  },
+  "summary_stats": {
+    "price": {
+      "mean": 0.4224269005847954,
+      "std": 0.2690195357249546,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "units_sold": {
+      "mean": 0.3667464788732394,
+      "std": 0.24886924336080743,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "profit": {
+      "mean": 557.4874125,
+      "std": 192.1725353266707,
+      "min": 176.85,
+      "max": 1028.0625
+    }
+  }
+}
