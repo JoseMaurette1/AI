@@ -7,6 +7,5 @@ or
 if you want to run locally clone, then
 ./start.sh
 
-/docs/DataMining.md
-has all the information
+
 
